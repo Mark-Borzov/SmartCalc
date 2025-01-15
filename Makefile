@@ -45,7 +45,7 @@ gcov_report: clean
 	rm -rf gcov_report.info
 	rm -rf test
 
-# /usr/lib/qt6/bin/qmake -- Заменить на фактическое расположение файла: qmake !!!
+# Строку /usr/lib/qt6/bin/qmake ---> Заменить на фактическое расположение файла: qmake !!!
 install:
 	mkdir -p ./Install
 	cd ./Front/ && /usr/lib/qt6/bin/qmake . && $(MAKE) all
